@@ -6,7 +6,7 @@
   - [rust](/lang/rust)
   - [lua](/lang/lua)
 
-* [Linux](/linux)
+* Linux
 	- [Ubuntu](/linux/ubuntu)
 
 - IDE
@@ -14,9 +14,15 @@
   	- [按键映射](/ide/neovim/keymaps "neovim - 按键映射")
   	- [LazyVim](/ide/neovim/lazyvim "neovim - LazyVim")
 
-* [终端](/terminal)
+* 终端
 	- [wezterm](/terminal/wezterm)
 
-* [Termux](/termux)
+* Termux
+	- [开机启动](/termux/startup "Termux - 开机启动")
 	- [开启ssh服务](/termux/ssh-server "Termux - 开启ssh服务")
 	- [安装linux发行版](/termux/distro "Termux - 安装linux发行版")
+	- [ubuntu](/termux/ubuntu "Termux - ubuntu")
+
+* 软件
+  - [clash](/software/clash)
+  - [tvbox](/software/tvbox)

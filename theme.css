@@ -1,3 +1,7 @@
+:root {
+    --sidebar-width: 220px;
+}
+
 .sidebar > .sidebar-nav > ul > li {
     font-size: 16px;
     font-weight: bold;
@@ -17,6 +21,14 @@
     color: red;
 }
 
+.sidebar {
+    width: var(--sidebar-width);
+}
+
+.content {
+    left: var(--sidebar-width);
+}
+
 .sidebar-toggle-button {
     span {
         width: 24px;
@@ -24,33 +36,51 @@
     }
 }
 
-.markdown-section {
+.markdown-section#main {
     & pre > code {
         padding: 1rem 5px;
+    }
+    /*字数统计不占用文档流*/
+    & > div:first-child {
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media (max-width: 1920px) {
+    .markdown-section {
+        max-width: 90%;
     }
 }
 
 @media (max-width: 768px) {
+    .content {
+        padding-top: 0;
+    }
+    body.close .content {
+        transform: translateX(var(--sidebar-width));
+    }
     .markdown-section {
         max-width: 96%;
 
         & h1 {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
         & h2 {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            margin: 1.4rem 0 0.8rem 0;
         }
         & h3 {
             font-size: 1rem;
         }
         & h4 {
-            font-size: 0.9rem;
-        }
-        & h5 {
             font-size: 0.8rem;
         }
+        & h5 {
+            font-size: 0.6rem;
+        }
         & h6 {
-            font-size: 0.7rem;
+            font-size: 0.4rem;
         }
     }
 }
