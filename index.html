@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>王明发的个人文档</title>
+  <title>王明发的睡前故事</title>
   <link rel="icon" type="image/x-icon" href="/logo.svg">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
@@ -12,12 +12,26 @@
   <link rel="stylesheet" href="/plugins/copy-code.css">
 </head>
 <body>
+  <audio id="bg" loop>
+     <source src="/mojito.mid" type="audio/midi">
+     <source src="/mojito.mp3" type="audio/mpeg">
+  </audio>
   <div id="app"></div>
   <script>
+  	document.body.addEventListener('click', function(event) {
+ 		playAudio();
+  	});
+    function playAudio() {
+        const audio = document.getElementById('bg');
+        // 判断是否在播放
+        if (audio.paused) {
+        	audio.play().catch(err => console.log('播放失败:', err));
+        }
+    }
     window.$docsify = {
-      name: '',
+      name: '<img src="/logo.svg" alt="logo"/>学无止境',
       repo: '',
-      logo: '/logo.svg',
+      // logo: '/logo.svg',
       loadSidebar: true,
       notFoundPage: 'my404.md',
       auto2top: true,

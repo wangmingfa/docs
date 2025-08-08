@@ -1,6 +1,5 @@
 <!-- docs/_sidebar.md -->
 
-- [首页](/)
 * 编程语言
   - [javascript](/lang/javascript)
   - [rust](/lang/rust)
