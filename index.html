@@ -25,6 +25,7 @@
         const audio = document.getElementById('bg');
         // 判断是否在播放
         if (audio.paused) {
+        	audio.volume = 0.3; // 音量（范围：0.0 ~ 1.0）
         	audio.play().catch(err => console.log('播放失败:', err));
         }
     }
