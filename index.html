@@ -12,8 +12,7 @@
   <link rel="stylesheet" href="/plugins/copy-code.css">
 </head>
 <body>
-  <audio id="bg" loop>
-     <source src="/mojito.mid" type="audio/midi">
+  <audio id="bg">
      <source src="/mojito.mp3" type="audio/mpeg">
   </audio>
   <div id="app"></div>
@@ -21,14 +20,26 @@
   	document.body.addEventListener('click', function(event) {
  		playAudio();
   	});
+    const audio = document.getElementById('bg');
+    const playlist = ["mojito.mp3", "等你下课.mp3"];
+    let currentTrack = 0;
     function playAudio() {
-        const audio = document.getElementById('bg');
         // 判断是否在播放
         if (audio.paused) {
         	audio.volume = 0.3; // 音量（范围：0.0 ~ 1.0）
         	audio.play().catch(err => console.log('播放失败:', err));
         }
     }
+    audio.addEventListener('ended', function() {
+      currentTrack++;
+      if (currentTrack < playlist.length) {
+        audio.src = playlist[currentTrack];
+      } else {
+        currentTrack = 0;
+        audio.src = playlist[currentTrack];
+      }
+      audio.play(); // ✅ 通常不会被拦截（因为用户已经交互过）
+    });
     window.$docsify = {
       name: '<img src="/logo.svg" alt="logo"/>学无止境',
       repo: '',
