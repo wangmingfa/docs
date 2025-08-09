@@ -56,7 +56,7 @@
     /*字数统计不占用文档流*/
     & > div:first-child {
         position: absolute;
-	top: -0.3rem;
+	top: -0.2rem;
         right: 0;
     }
 }
