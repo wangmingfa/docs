@@ -13,3 +13,10 @@ proot-distro login <distro_name>
 # 卸载发行版
 proot-distro remove <distro_name>
 ```
+
+# 配置DNS
+> 由于安装的linux发行版的DNS一般只有8.8.8.8，在国内的网络下，无法访问，这里推荐阿里的DNS
+```bash
+echo "nameserver 223.5.5.5" > /etc/resolv.conf
+echo "nameserver 223.6.6.6" >> /etc/resolv.conf
+```

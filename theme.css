@@ -50,14 +50,19 @@
 }
 
 .markdown-section#main {
-    & pre > code {
-        padding: 1rem 5px;
+    & pre {
+        padding: 0 5px;
+        border-radius: 4px;
+        & > code {
+            padding: 1rem 5px 0.4rem 5px;
+        }
     }
     /*字数统计不占用文档流*/
     & > div:first-child {
         position: absolute;
-	top: -0.18rem;
+        top: 0;
         right: 0;
+        font-size: 0.8rem;
     }
 }
 

@@ -6,7 +6,11 @@
   - [lua](/lang/lua)
 
 * Linux
+	- [通用](/linux/common)
 	- [Ubuntu](/linux/ubuntu)
+	- [Arch](/linux/arch)
+		- [系统安装](/linux/arch/install)
+		- [常用软件](/linux/arch/software)
 
 - IDE
 	- neovim
