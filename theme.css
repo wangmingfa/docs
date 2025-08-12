@@ -72,6 +72,22 @@
     }
 }
 
+.markdown-section {
+    & h1 {
+    }
+    & h2 {
+    }
+    & h3 {
+        margin-top: 20px;
+    }
+    & h4 {
+    }
+    & h5 {
+    }
+    & h6 {
+    }
+}
+
 @media (max-width: 768px) {
     .content {
         padding-top: 0;
