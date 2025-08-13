@@ -19,6 +19,15 @@
 .strong {
     font-weight: bold;
     color: red;
+    padding: 1px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    &.code {
+        cursor: pointer;
+        &:hover {
+            background: #e0e0e0;
+        }
+    }
 }
 
 .sidebar {
