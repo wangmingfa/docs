@@ -102,6 +102,9 @@
     & h6 {
         font-size: 0.8rem;
     }
+    a {
+      word-break: break-all;
+    }
 }
 
 @media (max-width: 768px) {
