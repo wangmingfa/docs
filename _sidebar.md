@@ -6,7 +6,7 @@
   * [lua](/lang/lua)
 
 * Linux
-  * [通用](/linux/common)
+  * [通用](/linux/common "Linux - 通用")
   * [Ubuntu](/linux/ubuntu)
   * Arch
     * [系统安装](/linux/arch/install "Arch - 系统安装")

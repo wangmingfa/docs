@@ -1,4 +1,6 @@
-# 修改默认shell
+# Linux通用技能
+
+## 修改默认shell
 >
 > 修改完之后重启终端
 
@@ -6,7 +8,8 @@
 chsh -s $(which zsh)
 ```
 
-# vim/neovim中文乱码
+>
+## vim/neovim中文乱码
 >
 > 执行<span class="strong code">vim ~/.vimrc</span>，填入以下内容
 
@@ -16,7 +19,7 @@ set encoding=utf8
 set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
 ```
 
-# 快速添加路径到PATH
+## 快速添加路径到PATH
 >
 > 执行<span class="strong code">vim /usr/local/bin/add_to_path</span>，填入一下内容（记得给此文件添加可执行权限）
 
@@ -67,10 +70,16 @@ fi
 echo "请执行 source $RC_FILE 重新加载配置"
 ```
 
-# ls中文名乱码
+## ls中文名乱码
 >
 > 执行<span class="strong code">vim ~/.bashrc</span>，填入以下内容
 
 ```bash
 export LC_ALL=C.UTF-8
+```
+
+## 安装starship
+
+```bash
+curl -sS https://starship.rs/install.sh | sh
 ```

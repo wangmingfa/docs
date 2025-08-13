@@ -20,7 +20,7 @@
    			MIDIjs.get_duration(url, function(seconds) { resolve(seconds); } )
     	});
     }
-    const playlist = ["mojito.mid", "夜曲.mid"];
+    const playlist = ["Beat-It.mid", "mojito.mid", "夜曲.mid", "Billie-Jean.mid"];
     let currentTrack = 0;
     let currentTotalDuration = 0;
     let playing = false;
@@ -39,7 +39,7 @@
     async function playAudio() {
    		if(playing) return;
      	playing = true;
-    	const url = `./${playlist[currentTrack]}`;
+    	const url = `./audio/${playlist[currentTrack]}`;
     	const duration = await getMidDuration(url);
      	if (duration < 0) {
      		console.error(`Failed to load ${url}`);
