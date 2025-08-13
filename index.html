@@ -102,8 +102,8 @@
         language:'chinese'
       }
     }
-    if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('/sw.js')
+    if (!location.hostname.includes('localhost') && typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('./sw.js')
     }
   </script>
   <!-- Docsify v4 -->
