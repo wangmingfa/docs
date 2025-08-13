@@ -8,7 +8,7 @@
 * Linux
   * [通用](/linux/common)
   * [Ubuntu](/linux/ubuntu)
-  * [Arch](/linux/arch)
+  * Arch
     * [系统安装](/linux/arch/install "Arch - 系统安装")
     * [常用软件](/linux/arch/software "Arch - 常用软件")
 
