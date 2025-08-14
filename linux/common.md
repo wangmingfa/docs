@@ -78,8 +78,45 @@ echo "请执行 source $RC_FILE 重新加载配置"
 export LC_ALL=C.UTF-8
 ```
 
-## 安装starship
+## 安装nerd fonts
+>
+> nerd fonts字体获取，[https://www.nerdfonts.com/font-downloads](https://www.nerdfonts.com/font-downloads)
+
+```bash
+wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip \
+&& cd ~/.local/share/fonts \
+&& unzip JetBrainsMono.zip \
+&& rm JetBrainsMono.zip \
+&& fc-cache -fv
+```
+
+## starship
+
+### 安装starship
 
 ```bash
 curl -sS https://starship.rs/install.sh | sh
+```
+
+### 验证starship安装
+
+```bash
+starship --version
+```
+
+### 为shell配置starship
+
+> 将以下代码放到rc文件中（比如~/.zshrc）。<br>
+> 这里以zsh为例，其它方式参考官网[https://starship.rs/guide/#step-2-set-up-your-shell-to-use-starship](https://starship.rs/guide/#step-2-set-up-your-shell-to-use-starship)
+
+```bash
+eval "$(starship init zsh)"
+```
+
+### 设置starship样式
+
+> 预置样式：[https://starship.rs/presets/](https://starship.rs/presets/)
+
+```bash
+starship preset catppuccin-powerline -o ~/.config/starship.toml
 ```

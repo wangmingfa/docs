@@ -83,23 +83,41 @@
 
 .markdown-section {
     & h1 {
+        & span {
+          color: #2E86C1;
+        }
         font-size: 2rem;
     }
     & h2 {
+        & span {
+          color: #28B463;
+        }
         font-size: 1.7rem;
         margin-top: 30px;
     }
     & h3 {
+        & span {
+          color: #F39C12;
+        }
         font-size: 1.4rem;
         margin-top: 20px;
     }
     & h4 {
+        & span {
+          color: #D35400;
+        }
         font-size: 1.1rem;
     }
     & h5 {
+        & span {
+          color: #8E44AD;
+        }
         font-size: 1rem;
     }
     & h6 {
+        & span {
+          color: #34495E;
+        }
         font-size: 0.8rem;
     }
     a {
