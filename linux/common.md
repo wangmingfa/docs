@@ -120,3 +120,12 @@ eval "$(starship init zsh)"
 ```bash
 starship preset catppuccin-powerline -o ~/.config/starship.toml
 ```
+
+## ripgrep
+
+```bash
+# ubuntu
+sudo apt install ripgrep
+# arch linux
+sudo pacman -S ripgrep
+```
