@@ -1,4 +1,4 @@
-<!-- docs/_sidebar.md -->
+<!-- docs/_seditorbar.md -->
 
 * 编程语言
   * [javascript](/lang/javascript)
@@ -12,11 +12,12 @@
     * [系统安装](/linux/arch/install "Arch - 系统安装")
     * [常用软件](/linux/arch/software "Arch - 常用软件")
 
-* IDE
+* 编辑器
+  * [vim](/editor/vim)
   * neovim
-    * [安装](/ide/neovim/install "neovim - 安装")
-    * [按键映射](/ide/neovim/keymaps "neovim - 按键映射")
-    * [LazyVim](/ide/neovim/lazyvim "neovim - LazyVim")
+    * [安装](/editor/neovim/install "neovim - 安装")
+    * [按键映射](/editor/neovim/keymaps "neovim - 按键映射")
+    * [LazyVim](/editor/neovim/lazyvim "neovim - LazyVim")
 
 * 终端
   * [wezterm](/terminal/wezterm)

@@ -8,17 +8,6 @@
 chsh -s $(which zsh)
 ```
 
->
-## vim/neovim中文乱码
->
-> 执行<span class="strong code">vim ~/.vimrc</span>，填入以下内容
-
-```bash
-set termencoding=utf-8
-set encoding=utf8
-set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
-```
-
 ## 快速添加路径到PATH
 >
 > 执行<span class="strong code">vim /usr/local/bin/add_to_path</span>，填入一下内容（记得给此文件添加可执行权限）
