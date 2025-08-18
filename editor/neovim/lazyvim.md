@@ -1,11 +1,15 @@
 # 开始
+
 [https://www.lazyvim.org/](https://www.lazyvim.org/)
 
-# 安装
+## 安装
+
 [https://www.lazyvim.org/installation](https://www.lazyvim.org/installation)
 
-# 自定义配置
+## 自定义配置
+>
 > 在<span class="strong">nvim/lua/config</span>中，新建<span class="strong">custom.lua</span>文件，填入以下内容。然后在<span class="strong">nvim/init.lua</span>中添加<span class="strong">require("config.custom")</span>
+
 ```lua
 -- 当前光标位置的变量背景色
 vim.api.nvim_set_hl(0, "LspReferenceRead", { bg = "#1b5e20", bold = true })
@@ -39,7 +43,8 @@ vim.api.nvim_set_hl(0, "DiagnosticUnnecessary", {
 })
 ```
 
-# 自定义按键映射
+## 自定义按键映射
+>
 > 在<span class="strong">nvim/lua/config/keymaps.lua</span>中，填入以下内容
 
 ```lua
@@ -68,7 +73,7 @@ local function fzf_npm_scripts()
     table.insert(script_list, "npm run " .. padded_name .. ": " .. cmd)
   end
 
-  # 请确保安装了fzf
+  ## 请确保安装了fzf
   require("fzf-lua").fzf_exec(script_list, {
     prompt = "请选择要运行的npm脚本: ",
     actions = {
@@ -104,7 +109,7 @@ end
 vim.keymap.set("n", "<leader>r", fzf_npm_scripts, { desc = "运行npm脚本" })
 ```
 
-# 安装LazyGit插件
+## 安装LazyGit插件
 
 1. 先安装LazyGit
 [https://github.com/jesseduffield/lazygit?tab=readme-ov-file#installation](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#installation)
@@ -129,6 +134,27 @@ return {
   -- order to load the plugin when the command is run for the first time
   keys = {
     { "<leader>lg", "<cmd>LazyGit<cr>", desc = "Open lazy git" },
+  },
+}
+```
+
+## vue2配置
+>
+> 编辑<span class="strong code">~/.config/nvim/lua/plugins/vuels.lua</span>
+
+```lua
+return {
+  -- add vuels  to lspconfig
+  {
+    "neovim/nvim-lspconfig",
+    ---@class PluginLspOpts
+    opts = {
+      ---@type lspconfig.options
+      servers = {
+        -- vuels will be automatically installed with mason and loaded with lspconfig
+        ["vuels"] = {},
+      },
+    },
   },
 }
 ```
