@@ -54,6 +54,15 @@ config.keys = {
 	{ key = "7", mods = "CMD", action = wezterm.action.ActivateTab(6) },
 	{ key = "8", mods = "CMD", action = wezterm.action.ActivateTab(7) },
 	{ key = "9", mods = "CMD", action = wezterm.action.ActivateTab(-1) },
+
+  -- Alt + Left: 向后一个单词
+    {key="LeftArrow", mods="ALT", action=wezterm.action{SendKey={key="b", mods="ALT"}}},
+    -- Alt + Right: 向前一个单词
+    {key="RightArrow", mods="ALT", action=wezterm.action{SendKey={key="f", mods="ALT"}}},
+
+    -- Home / End → 发送 Ctrl+A / Ctrl+E（Bash/Zsh 默认行首行尾）
+    {key="Home", mods="", action=wezterm.action{SendKey={key="a", mods="CTRL"}}},
+    {key="End",  mods="", action=wezterm.action{SendKey={key="e", mods="CTRL"}}},
 }
 
 config.ssh_domains = {
