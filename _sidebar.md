@@ -2,7 +2,8 @@
 
 * 编程语言
   * [javascript](/lang/javascript)
-  * [rust](/lang/rust)
+  * rust
+    * [安装](/lang/rust/install)
   * [lua](/lang/lua)
 
 * Linux
