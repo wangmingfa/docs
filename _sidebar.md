@@ -32,3 +32,6 @@
 * 软件
   * [clash](/software/clash)
   * [tvbox](/software/tvbox)
+  * Rime
+    * [鼠须管](/software/rime/squirrel "Rime - 鼠须管")
+    * [小狼毫](/software/rime/weasel "Rime - 小狼毫")
