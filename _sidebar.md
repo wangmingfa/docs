@@ -35,3 +35,7 @@
   * Rime
     * [鼠须管](/software/rime/squirrel "Rime - 鼠须管")
     * [小狼毫](/software/rime/weasel "Rime - 小狼毫")
+
+* 开发工具
+  * Github
+    * [加速](/dev/github/speedup "Github - 加速")
