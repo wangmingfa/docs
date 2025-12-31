@@ -5,6 +5,8 @@
   * rust
     * [安装](/lang/rust/install)
   * [lua](/lang/lua)
+  * moonbit
+    * [调用c语言](/lang/moonbit/c)
 
 * Linux
   * [通用](/linux/common "Linux - 通用")
