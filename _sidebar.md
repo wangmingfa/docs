@@ -41,3 +41,5 @@
 * 开发工具
   * Github
     * [加速](/dev/github/speedup "Github - 加速")
+  * Visual Studio Code
+    * [Run on Save](/dev/vscode/run-on-save "Visual Studio Code - Run on Save")
