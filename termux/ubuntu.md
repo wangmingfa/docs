@@ -19,3 +19,9 @@ PasswordAuthentication yes
 5. 将公钥放到ubuntu的~/.ssh/authorized_keys中（可选）
 6. 启动sshd服务（service ssh start）
 7. 登录命令（ssh root@ip -p 8022）
+
+
+# 显示当前IP
+```bash
+ifconfig 2>/dev/null | awk '/wlan0/{getline; print}' | awk '{print $2}'
+```
