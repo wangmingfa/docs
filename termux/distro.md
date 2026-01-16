@@ -10,6 +10,8 @@ proot-distro list
 proot-distro install <distro_name>
 # 启动发行版
 proot-distro login <distro_name>
+# 指定用户登录
+proot-distro login ubuntu --user myuser
 # 卸载发行版
 proot-distro remove <distro_name>
 ```
