@@ -10,7 +10,11 @@
 
 * Linux
   * [通用](/linux/common "Linux - 通用")
-  * [Ubuntu](/linux/ubuntu)
+  * Ubuntu
+    * [切换国内源](/linux/ubuntu/source)
+    * [sshd](/linux/ubuntu/sshd)
+    * [创建用户](/linux/ubuntu/adduser)
+    * [visudo](/linux/ubuntu/visudo)
   * Arch
     * [系统安装](/linux/arch/install "Arch - 系统安装")
     * [常用软件](/linux/arch/software "Arch - 常用软件")
