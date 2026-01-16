@@ -50,6 +50,6 @@ if pgrep -x "$PROCESS_NAME" > /dev/null
 then
     echo "Process $PROCESS_NAME is running."
 else
-    service ssh start
+    sudo service ssh start
 fi
 ```
