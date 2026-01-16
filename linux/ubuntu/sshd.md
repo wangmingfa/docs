@@ -37,6 +37,19 @@ sudo service ssh start
 vim ~/.ssh/authorized_keys
 ```
 
+<mark>如果发现加了公钥，也需要密码，有可能是某些目录、文件的权限不对，执行一下命令：</mark>
+
+```bash
+# 确保家目录权限正确（不能有组写入权限）
+chmod 700 ~
+
+# 确保 .ssh 目录权限为 700
+chmod 700 ~/.ssh
+
+# 确保 authorized_keys 文件权限为 600
+chmod 600 ~/.ssh/authorized_keys
+```
+
 ## ssh开启自启
 >
 > 编辑<span class="strong code">~/start-sshd.sh</span>
