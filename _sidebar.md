@@ -9,7 +9,9 @@
     * [调用c语言](/lang/moonbit/c)
 
 * Linux
-  * [通用](/linux/common "Linux - 通用")
+  * 通用
+    * [常用](/linux/common/commonly-used "Linux - 通用 - 常用")
+    * [应用程序入口](/linux/common/app-entry "Linux - 通用 - 应用程序入口")
   * Ubuntu
     * [切换国内源](/linux/ubuntu/source)
     * [sshd](/linux/ubuntu/sshd)

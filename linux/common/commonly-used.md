@@ -1,4 +1,4 @@
-# Linux通用技能
+# 常用
 
 ## 修改默认shell
 >
@@ -118,3 +118,4 @@ sudo apt install ripgrep
 # arch linux
 sudo pacman -S ripgrep
 ```
+
