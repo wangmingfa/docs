@@ -37,6 +37,7 @@
   * [开启ssh服务](/termux/ssh-server "Termux - 开启ssh服务")
   * [安装linux发行版](/termux/distro "Termux - 安装linux发行版")
   * [ubuntu](/termux/ubuntu "Termux - ubuntu")
+  * [syncthing](/termux/syncthing "Termux - syncthing")
 
 * 软件
   * [clash](/software/clash)
