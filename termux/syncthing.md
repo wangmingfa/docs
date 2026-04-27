@@ -77,6 +77,7 @@ fi
 # =========================
 **/dist
 **/build
+**/_build
 **/out
 **/release
 **/debug
