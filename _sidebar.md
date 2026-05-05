@@ -51,3 +51,7 @@
     * [加速](/dev/github/speedup "Github - 加速")
   * Visual Studio Code
     * [Run on Save](/dev/vscode/run-on-save "Visual Studio Code - Run on Save")
+
+* Windows
+  * PowerShell
+    * [中文乱码](/windows/powershell/garbled-text "PowerShell - 中文乱码")
