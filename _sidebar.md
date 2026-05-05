@@ -55,3 +55,5 @@
 * Windows
   * PowerShell
     * [中文乱码](/windows/powershell/garbled-text "PowerShell - 中文乱码")
+  * VisualStudioBuildTools
+    * [64位/开始位置](/windows/vs-build-tool/amd64.md "VS Build Tool - 64位/开始位置")
