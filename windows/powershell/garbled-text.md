@@ -34,4 +34,4 @@ $PSDefaultParameterValues['*:Encoding'] = 'utf8'
 
 ## 保存为 `UTF-8 BOM` 格式
 
-<img src="/images/utf8-bom.png">
+![UTF-8 BOM](../../images/utf8-bom.png "UTF-8 BOM")

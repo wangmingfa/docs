@@ -22,4 +22,4 @@ set ruler
 
 ## 快捷键
 
-![vim快捷键](./../images/vim.jpeg "vim快捷键")
+![vim快捷键](../images/vim.jpeg "vim快捷键")
