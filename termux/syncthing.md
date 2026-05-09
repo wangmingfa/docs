@@ -109,9 +109,9 @@ fi
 # =========================
 # 🧠 Local tools / runtime data
 # =========================
-**/skills
+#**/skills
 **/.agents
-**/.claude
+#**/.claude
 **/.syncthing
 
 # Syncthing internal (建议忽略)
@@ -189,6 +189,6 @@ fi
 # =========================
 **/.git
 #**/.gitignore
-**/.gitmodules
+#**/.gitmodules
 **/.gitattributes
 ```
